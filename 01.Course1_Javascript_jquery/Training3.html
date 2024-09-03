@@ -1,0 +1,61 @@
+<html>
+<head></head>
+<title>Math Operations</title>
+<body>
+<h3 >Math Operations</h3>
+
+First Number :  
+<input type="text" id="t1"  />
+<br></br>
+Second Number :  
+<input type="text" id="t2"  />
+<br></br>
+
+<input type="button" onclick="f1()" value="Add"  />	
+
+<input type="button" onclick="f2()" value="Sub"  />
+<input type="button" onclick="f3()" value="Multiply"  />
+<input type="button" onclick="f4()" value="Div"  /> 	
+ <br></br>
+
+<p id="p1"></p>
+
+<script>
+	function  f1()
+	{
+	 let a=document.getElementById("t1");
+	 let b=document.getElementById("t2");
+	 let p=document.getElementById("p1");
+	 
+	 p.innerHTML=parseInt(a.value)+parseInt(b.value);
+	 }
+	function  f2()
+	{
+	 let a=document.getElementById("t1");
+	 let b=document.getElementById("t2");
+	 let p=document.getElementById("p1");
+	 
+	 p.innerHTML=a.value-b.value;
+	 }
+	function  f3()
+	{
+	 let a=document.getElementById("t1");
+	 let b=document.getElementById("t2");
+	 let p=document.getElementById("p1");
+	 
+	 p.innerHTML=a.value*b.value;
+	 }
+	function  f4()
+	{
+	 let a=document.getElementById("t1");
+	 let b=document.getElementById("t2");
+	 let p=document.getElementById("p1");
+	 
+	 p.innerHTML=a.value/b.value;
+	 }
+</script>
+</body>
+</html>
+
+
+
