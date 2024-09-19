@@ -1,0 +1,29 @@
+<style>
+  .innerDiv {
+    border: 2px solid blue;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .outerDiv {
+    flex-wrap: wrap;
+    display: flex;  
+  }
+</style>
+
+<h1 align="center">Displaying Collection of Objects in Angular</h1>
+<hr/>
+
+<div class="outerDiv">
+<div class="innerDiv" *ngFor="let item of deptsArray">
+  Deptno: {{item.deptno}} <br/>
+  Dname: {{item.dname}}<br/>
+  Loc: {{item.loc}}<br/>
+</div>
+</div>
+
+
